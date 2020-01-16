@@ -68,7 +68,7 @@ struct Student
         bool hasScienceBook = true;
 
         void exchangeBooksInLocker(int periodNum);
-		FIXME add one more member function
+		void eatLunch();
     };
 };
 /*
