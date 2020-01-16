@@ -47,14 +47,32 @@ struct Student
     
     struct Backpack
     {
-        bool hasHistoryBook = false;
+        bool hasHistoryBook = true;
         bool hasMathBook = true;
         bool hasScienceBook = true;
 
         void exchangeBooksInLocker(int periodNum);
 		void eatLunch();
     };
+
+    Backpack a,b;
 };
+
+#include <iostream>
+void Student::graduate(bool pass)
+{
+    if( pass )
+    {
+        std::cout << "I graduated!!" << std::endl;
+    }
+    else
+    {
+        if( gpa > 3.5f )
+        {
+            std::cout << "I graduated!!" << std::endl;
+        }
+    }
+}
 /*
  2)
  */
