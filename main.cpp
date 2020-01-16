@@ -51,7 +51,25 @@ struct CarWash            //1) a U.D.T. with a random number of member variables
 /*
  1)
  */
+struct Student
+{
+    float gpa = 4.0f;
+    float age = 14.5f;
+    int currentSemester = 2;
+    int daysSkipped = 1;
+    int daysSick = 3;
 
+    void graduate(bool pass);
+    
+    struct Backpack
+    {
+        bool hasHistoryBook = false;
+        bool hasMathBook = true;
+        bool hasScienceBook = true;
+
+        void exchangeBooksInLocker(int periodNum);
+    };
+};
 /*
  2)
  */
